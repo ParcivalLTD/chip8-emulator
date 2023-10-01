@@ -12,7 +12,7 @@ namespace chip_8
     {
         static void Main(string[] args)
         {
-            IntPtr window = SDL.SDL_CreateWindow("Chip 8 Emulator", 128, 128, 64 * 16, 32 * 16, 0);
+            IntPtr window = SDL.SDL_CreateWindow("Chip 8 Emulator", 128, 128, 64 * 8, 32 * 8, 0);
             IntPtr renderer = SDL.SDL_CreateRenderer(window, -1, SDL.SDL_RendererFlags.SDL_RENDERER_ACCELERATED);
 
             bool running = true;
